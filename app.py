@@ -51,8 +51,8 @@ def train_doc():
 @app.route('/update', methods=['POST'])
 def updateRow():
     body = request.get_json()
-    file_path = body['file_path']
-    _id = body['_id']
+    file_path = 'faq.csv'
+    _id = body['_id'] - 1
     column_name = body['column_name']
     value = body['value']
     df = pd.read_csv(file_path)
