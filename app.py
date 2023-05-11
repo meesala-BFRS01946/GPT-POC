@@ -52,5 +52,17 @@ def train_doc():
     query = "give the answer to the user's query .The answers should be given from the Document provided to you and if there is no answer from that document please return 'sorry i don't know'.The user query is {}".format(user_q)
     return qa.run(query)
 
+@app.route('/update', methods=['POST'])
+def updateRow():
+    body = request.get_json()
+    file_path = 'faq.csv'
+    _id = body['_id'] - 1
+    column_name = body['column_name']
+    value = body['value']
+    df = pd.read_csv(file_path)
+    df.loc[_id, column_name] = value
+    df.to_csv(file_path, index = False)
+    return "File Updated."
+
 if __name__ == '__main__':
     app.run(debug=True)
