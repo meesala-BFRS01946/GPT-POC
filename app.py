@@ -56,12 +56,13 @@ def train_doc():
 def updateRow():
     body = request.get_json()
     file_path = 'faq.csv'
-    _id = body['_id'] - 1
+    qa_id = body['qa_id']
     column_name = body['column_name']
     value = body['value']
     df = pd.read_csv(file_path)
-    df.loc[_id, column_name] = value
-    df.to_csv(file_path, index = False)
+    df.set_index('ID', inplace=True)
+    df.at[qa_id, column_name] = value
+    df.to_csv(file_path, index=True)
     return "File Updated."
 
 if __name__ == '__main__':
