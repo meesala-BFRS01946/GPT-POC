@@ -8,6 +8,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
+import pandas as pd
 
 load_dotenv()
 openai.api_key =os.getenv("OPENAI_API_KEY")
@@ -46,6 +47,19 @@ def train_doc():
     user_q=query["question"]
     query = "give the answer to the user's query .Make sure if there are any sequential steps regarding the answer to the user's query,  then provide them in bulleted points .The user query is {}".format(user_q)
     return qa.run(query)
-
+    
+@app.route('/update', methods=['POST'])
+def updateRow():
+    body = request.get_json()
+    file_path = 'faq.csv'
+    qa_id = body['qa_id']
+    column_name = body['column_name']
+    value = body['value']
+    df = pd.read_csv(file_path)
+    df.set_index('ID', inplace=True)
+    df.at[qa_id, column_name] = value
+    df.to_csv(file_path, index=True)
+    return "File Updated."
+    
 if __name__ == '__main__':
     app.run(debug=True)
