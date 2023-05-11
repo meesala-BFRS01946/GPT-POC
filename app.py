@@ -1,13 +1,15 @@
+import os
 import openai
+import pickle
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-import os
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
+from langchain.document_loaders.csv_loader import CSVLoader
 import pandas as pd
 
 load_dotenv()
@@ -17,7 +19,7 @@ app=Flask(__name__)
 
 @app.route('/',methods=['GET'])
 def home():
-    return "welcome to Flask app for GPT"
+    return "<center><h3>Welcome To Flask App For GPT</h3></center>"
 
 @app.route('/enhance', methods=['POST'])
 def prod_desc():
@@ -37,29 +39,18 @@ def prod_desc():
 @app.route('/text',methods=['POST'])
 def train_doc():
     query=request.get_json()
-    loader = TextLoader("FAQ")
-    documents = loader.load()
+   # loader = TextLoader("FAQ")
+  #  documents = loader.load()
+    loader = CSVLoader(file_path='./faq.csv',csv_args={'delimiter': ','})
+    data = loader.load()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-    texts = text_splitter.split_documents(documents)
+    texts = text_splitter.split_documents(data)
     embeddings = OpenAIEmbeddings()
     docsearch = Chroma.from_documents(texts, embeddings)
     qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=docsearch.as_retriever(search_kwargs={"k": 1}))
     user_q=query["question"]
-    query = "give the answer to the user's query .Make sure if there are any sequential steps regarding the answer to the user's query,  then provide them in bulleted points .The user query is {}".format(user_q)
+    query = "give the answer to the user's query .The answers should be given from the Document provided to you and if there is no answer from that document please return 'sorry i don't know'.The user query is {}".format(user_q)
     return qa.run(query)
-    
-@app.route('/update', methods=['POST'])
-def updateRow():
-    body = request.get_json()
-    file_path = 'faq.csv'
-    qa_id = body['qa_id']
-    column_name = body['column_name']
-    value = body['value']
-    df = pd.read_csv(file_path)
-    df.set_index('ID', inplace=True)
-    df.at[qa_id, column_name] = value
-    df.to_csv(file_path, index=True)
-    return "File Updated."
-    
+
 if __name__ == '__main__':
     app.run(debug=True)
