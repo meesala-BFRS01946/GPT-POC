@@ -18,7 +18,7 @@ EXPOSE 3000
 
 # Set any necessary environment variables (if applicable)
 # ENV MY_VARIABLE=value
-#ENV OPENAI_API_KEY="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"
+
 
 
 # Define the command to run your Flask app
