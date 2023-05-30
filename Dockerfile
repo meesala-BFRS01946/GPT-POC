@@ -17,10 +17,6 @@ COPY . .
 EXPOSE 3000
 
 # Set any necessary environment variables (if applicable)
-# ENV MY_VARIABLE=value
-
-
-
 # Define the command to run your Flask app
 CMD ["python", "app.py"]
 
