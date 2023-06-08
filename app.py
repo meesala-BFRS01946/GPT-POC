@@ -13,7 +13,7 @@ from werkzeug.middleware.profiler import ProfilerMiddleware
 import re
 
 load_dotenv()
-openai.api_key =os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app=Flask(__name__)
 
@@ -75,11 +75,11 @@ def get_content_after_string(string):
 
 from elasticsearch import Elasticsearch
 # Specify the Elasticsearch server URL
-es = Elasticsearch(hosts=["http://localhost:9200"])
+#es = Elasticsearch(hosts=["http://localhost:9200"])
 
 
 
-loader = CSVLoader(file_path='./que_ans (1).csv',csv_args={'delimiter': ','})
+loader = CSVLoader(file_path='./QA_updated.csv',csv_args={'delimiter': ','})
 data = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=10000, chunk_overlap=0)
 texts = text_splitter.split_documents(data)
@@ -123,9 +123,6 @@ def train_doc():
     qq="Act as a FAQ answerer for a e-commerce company and please answer the question provided by the user and if there is no answer found to you as per your training please return 'NULL' and the user query is {} , please return 'NULL' if the question is not relevant to the document you have been trained".format(user_q)
     #r=qa.run(qq)
     results = db.similarity_search(user_q)
-    print("####################################################################")
-    print(results)
-    print("####################################################################")
    # er=retrieve_value("1234")
     return jsonify({"response":get_content_after_string((results[0].page_content)),"intent":"elk"})
 
