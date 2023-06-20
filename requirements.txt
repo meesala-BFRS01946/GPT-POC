@@ -3,3 +3,6 @@ tiktoken
 flask
 langchain
 elasticsearch
+fuzzywuzzy
+pandas
+redis

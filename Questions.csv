@@ -1,0 +1,465 @@
+,question,question_id
+0,How do I contact the Shiprocket support team?,43000464186
+1,What is Profile Milestone?,43000564647
+2,Can I add my brand logo and product details to the shipping label?,43000594213
+3,What are the different plans available in Shiprocket? Which plan is best for me?,43000319664
+4,Can I upgrade and downgrade my plan at any time?,43000463628
+5,Can I use the wallet balance to pay my SaaS invoice?,43000604030
+6,Why are there additional charges for weight and RTO on my account?,43000460575
+7,What is RTO? What are the possible reasons behind RTO?,43000474458
+8,Where can I check RTO orders in panel?,43000474459
+9,How to reduce RTO in shipping?,43000479581
+10,Will I be charged for RTO?,43000479584
+11,How to block ODA (Out of Delivery Area) pincodes?,43000590102
+12,How to block RTO (Return to Origin) pincodes?,43000590106
+13,How do I add a single product to master catalog in Shiprocket?,43000325957
+14,Why do we require product categories?,43000325958
+15,What is Mapped And Unmapped Product?,43000340026
+16,What do we mean by a default category?,43000340041
+17,What is a HSN code? Why do we require it?,43000480752
+18,How do I add a category in Shiprocket panel?,43000480753
+19,What do we mean by SKU?,43000325988
+20,Where can I see the inventory report?,43000337574
+21,Does Shiprocket support inventory management?,43000326004
+22,How do I link my sales channel catalog to my master catalog?,43000480791
+23,How to Import your master catalog to Shiprocket?,43000326033
+24,How to use the ShipRocket on Shopify App Store to automatically bulk process my orders?,43000326455
+25,How do I create Manifest in Bulk?,43000463610
+26,How do I bulk import orders from sales channels?,43000480754
+27,Package Master: How many pictures do I need to upload?,43000581557
+28,How much time does it take to get approval for my package request?,43000581558
+29,What happens if my package request gets rejected?,43000581559
+30,Is there a way to set a package alert on Shiprocket?,43000581560
+31,Can I update an old package?,43000581561
+32,How to buy packaging from Shiprocket? Can I get any discount if I buy in bulk?,43000581563
+33,Can I get branded packages with my logo on it?,43000581564
+34,Can I associate an SKU after creating a package?,43000581565
+35,What is MOQ if I buy packages from SR?,43000581566
+36,Do I need to apply for approval if I buy packaging from Shiprocket?,43000581567
+37,Can I associate one SKU with multiple packages?,43000581568
+38,Do I need to apply for packaging if I list my own packaging?,43000581569
+39,What is the process to activate Aramex as International courier partner?,43000326077
+40,What is the process to activate DHL as an International courier partner?,43000480803
+41,What is the frequency of order sync for different channels?,43000337291
+42,How do I integrate amazon as a channel?,43000471549
+43,How Do I integrate Ebay with Shiprocket?,43000326136
+44,How Do I integrate Opencart with Shiprocket?,43000326154
+45,How Do I integrate Woocommerce with Shiprocket?,43000326199
+46,How Do I integrate Magento(version 1) with Shiprocket?,43000326201
+47,How do I integrate Shopify as a channel with Shiprocket ?,43000326273
+48,How do I integrate Unicommerce with Shiprocket?,43000326303
+49,How Do I integrate Magento(Version 2) with Shiprocket?,43000460491
+50,How to Integrate Prestashop with Shiprocket?,43000460493
+51,How to Integrate Kartrocket with Shiprocket?,43000460496
+52,What Is a Pull Order Status Mapper?,43000467678
+53,What Is a Push Order Status Mapper?,43000467706
+54,What is a custom channel and how do I use it?,43000480793
+55,How do I integrate my Zoho website with Shiprocket?,43000561610
+56,How do I integrate my Store Hippo account with Shiprocket?,43000563249
+57,How to integrate Facebook Messenger with Shiprocket?,43000566298
+58,Channel Integration: How to import the weight and dimensions of each product?,43000600586
+59,How to create an API user? Can I have more than one API users?,43000604103
+60,How do I integrate Instamojo with Shiprocket?,43000634614
+61,How do I integrate Ecwid as a channel with Shiprocket ?,43000653168
+62,Shopify Integration: How long does it take for the order to be reflected in the SR panel?,43000655319
+63,Shopify Integration: Will an order that has been cancelled in Shopify be updated in Shiprocket?,43000655320
+64,Shopify Integration: Why is my prepaid order listed as COD in Shiprocket?,43000655324
+65,Shopify Integration: Will Shiprocket fetch the order's weight and dimensions?,43000655327
+66,Shopify Integration: Is it possible in Shiprocket to fetch only COD confirmed orders?,43000655328
+67,What are the necessary steps to be fulfilled for hassle free COD remittance?,43000463561
+68,I want to check how much COD is pending to be remitted?,43000337112
+69,I want to upgrade my Shiprocket plan. How do I do it?,43000337090
+70,How soon can I receive my COD amount in my bank account?,43000463560
+71,What is Shiprocket Postpaid? How do I activate it?,43000460520
+72,How to generate invoice and label for single and bulk order?,43000326567
+73,How many times do I get freight invoices in a month?,43000337306
+74,How to print eway bill number on the shipping label?,43000464674
+75,What happens if I don't pay my invoice?,43000478251
+76,How can I pay my shipping invoice?,43000604104
+77,Where can I see the recharge history for my previous transactions?,43000337141
+78,Can I get my COD payment directly in my Shiprocket wallet?,43000477894
+79,How does a domestic shipping rate calculator work?,43000336770
+80,What do we mean by shipment forward charges and  RTO charges?,43000336842
+81,Explaining shipping zones: How shipment zones affect order fulfillment and rates?,43000528685
+82,How does an international shipping rate calculator work?,43000336858
+83,My Bank Verification Got Failed. What Now?,43000486280
+84,What is Order verification? How do I enable it for my account?,43000576808
+85,How to verify COD orders?,43000576889
+86,How to add your customer care number in the shipping label?,43000610469
+87,How do I add multiple pickup addresses in the panel?,43000618828
+88,Can I delete a pickup address from the panel?,43000618829
+89,Can I select multiple courier partners?,43000337457
+90,How can I activate and deactivate courier channels from my panel?,43000475941
+91,What is Courier Priority? What is the best way to set courier priority?,43000475948
+92,Shiprocket: How to set courier rules?,43000638174
+93,How do I modify tax classes in Shiprocket?,43000337472
+94,How do I add a category to my ShipRocket panel?,43000337473
+95,How Shiprocket works?,43000480887
+96,What is Shiprocket Early COD? Should I opt for it?,43000538961
+97,How to activate Early COD for my Shiprocket account?,43000538964
+98,Can I Ship Directly Through My Website/E-commerce Channels?,43000480882
+99,Can I use more than one courier partner?,43000480885
+100,How many COD & pickup pincodes do you cover?,43000480881
+101,What is Split Shipment? How do I enable it for my account?,43000557819
+102,What is Multi Packet Shipment?,43000557820
+103,Is Shiprocket a courier partner?,43000480796
+104,Which products are prohibited/dangerous to ship via Shiprocket?,43000460506
+105,Whom should I contact - Shiprocket or courier partner?,43000480808
+106,I forgot my password. How do I reset it?,43000480811
+107,Does Shiprocket have a mobile app?,43000480815
+108,How to raise a complaint for delivery delay?,43000430317
+109,Can I change the delivery date for my order?,43000477596
+110,What do you mean by the expected delivery date?,43000477599
+111,How to download POD for my order?,43000558153
+112,How to raise an escalation against a fake POD?,43000618709
+113,Do you offer shipment security? Is there any maximum coverage amount?,43000337682
+114,What documents are required for International shipping?,43000324892
+115,Can I do bulk shipping or label assignment for international orders ?,43000337188
+116,Which all courier partners do we support for international shipping?,43000337632
+117,Where can I see my international orders in Shiprocket ?,43000337681
+118,Do We Process International COD?,43000340024
+119,How can I check if an international pincode is serviceable?,43000340098
+120,Can I do bulk shipping or label assignment for international orders?,43000460505
+121,What is minimum value of prepaid order required for domestic and international order?,43000477875
+122,How many days it take to complete and verify the whole international documentation process?,43000477881
+123,How to add product recommendations on Tracking Page?,43000679991
+124,What is NPS?,43000679992
+125,How can I check my NPS report?,43000680229
+126,How can I customize and add order tracking widget to my website?,43000680230
+127,How can I add a tracking link to my website?,43000680231
+128,How do I enable ‘Returns’ on my Post Ship tracking page?,43000536497
+129,How to activate “refund” on my post ship tracking page?,43000591468
+130,How to enable QC functionality for my return orders?,43000574933
+131,What are the criteria of Quality Examination for return shipments?,43000576838
+132,How to Process an NDR?,43000336725
+133,What is the process time for NDR?,43000336726
+134,How to escalate my NDR reattempt request?,43000544189
+135,How many attempts will be made by the courier company to deliver my order?,43000604100
+136,How long does it take for an action to be implemented on my undelivered shipment?,43000604101
+137,How does the Contact Buyer functionality work?,43000611199
+138,What is NDR Buyer Flow?,43000566534
+139,Can I cancel my Shiprocket Essential order?,43000567611
+140,Is the return functionality available for Shiprocket Essential orders?,43000567618
+141,Shiprocket Essential: How much does it cost?,43000567632
+142,Can I ship my amazon orders through Shiprocket essential?,43000567832
+143,What is Shiprocket Essential? Am I eligible for it?,43000567861
+144,What is Shiprocket Fulfillment?,43000585924
+145,How does SRF work?,43000585925
+146,How do you add products to your Shiprocket Fulfillment Account?,43000585926
+147,How do I generate barcodes for my SKUs?,43000585927
+148,What is GRN?,43000585929
+149,What happens when the product goes out of stock?,43000585930
+150,Shiprocket Fulfillment: Will you also manage my return orders?,43000585931
+151,I’m on the Shiprocket Lite plan. Can I still register for SRF?,43000585932
+152,"What are Active, On-Hold, Back and Completed Orders?",43000630541
+153,How to activate your Shiprocket Fulfillment account?,43000630547
+154,How do I map products in Shiprocket Fulfillment?,43000632238
+155,What exactly is 30-days free storage?,43000587602
+156,How do you calculate the volume of my products?,43000587605
+157,What criteria are you using to evaluate the quality of inventory?,43000587642
+158,What happens to my QC failed items?,43000587649
+159,Who pays for RTO?,43000587651
+160,Can I request RTO to my home/office instead of the warehouse?,43000587652
+161,What happens if a customer cancels the order?,43000587656
+162,Can I cancel an ASN?,43000587645
+163,How much inventory do you need for SRF?,43000585933
+164,What happens in the case of multi-item order?,43000588019
+165,What is ASN? How do I generate ASN for my shipments?,43000630592
+166,How can I make product combos in my Shiprocket Fulfillment Account?,43000631888
+167,What are the benefits of enabling the cost price feature for SKUs obtained from different vendors?,152000000480
+168,What kind of packaging is available with Shiprocket Fulfillment?,43000588667
+169,How to select the best packaging for my products?,43000588670
+170,Can I use my packaging?,43000588671
+171,I want to edit or modify my packaging. How do I do it?,43000588673
+172,What happens in case of a multi-item order?,43000588674
+173,When will I be billed for packaging?,43000588675
+174,Will you charge me for packaging if my order remains undelivered or move to the RTO status?,43000588676
+175,Do I need to provide my packaging preference at the time of product upload?,43000588677
+176,I want to check what packaging you used for my products?,43000588678
+177,Is GST applicable on SRF packaging?,43000588679
+178,Do I need to mention packaging type for all products?,43000600836
+179,How to Create a COD/Prepaid Order in Shiprocket?,43000324911
+180,What Is an Order ID?,43000464217
+181,"What Is a SKU, HSN Code, and Eway Bill Number?",43000468527
+182,Can I Create an Order Without Adding Product to the Catalog?,43000324915
+183,How to add orders in bulk?,43000565007
+184,How to File a Delivery Dispute for a Missing or Incorrectly Delivered Shipment?,43000659105
+185,How do I see my orders report?,43000480762
+186,How do I see my shipments report?,43000480764
+187,How do I automatically sync my orders ?,43000325819
+188,How to download all my orders from the Shiprocket Panel?,43000325821
+189,How do I edit/modify an order in Shiprocket?,43000325879
+190,How do I process or ship my orders in bulk?,43000325880
+191,"Can I print manifest of orders in bulk? If yes, how?",43000325911
+192,Where are my International orders? Is there a way to differentiate them from domestic orders?,43000325914
+193,How to mark orders as self fulfilled?,43000604787
+194,Can I change the payment mode of my order if it’s in the out for delivery status?,43000617519
+195,How to change the payment mode of my order?,43000617520
+196,What happens to my wallet balance if I cancel my order?,43000463567
+197,Can I cancel an order or shipment in Shiprocket? How will I get the refund for it?,43000463570
+198,My order is in out for pickup status. Can I cancel it?,43000564997
+199,How to process a New Return Request?,43000536509
+200,How to reassign a return order?,43000474417
+201,There are only three couriers available for return pickup. Why?,43000564731
+202,How to cancel a return order?,43000611718
+203,How to bulk upload and process return orders in Shiprocket?,43000614323
+204,How to enable the Return option on the Tracking Page for my customers?,43000658272
+205,How can my customers raise a new return request?,43000658273
+206,How to enable Quality Check for Returns?,43000658274
+207,What happens if Quality Check fails for a Return?,43000658275
+208,How to update Order Status on Shopify Panel after processing return on Shiprocket Panel?,43000658276
+209,What is the purpose of Acknowledge Status on my return order?,43000658277
+210,How to restock inventory in my respective channel after return is completed?,43000658278
+211,How to add refund details while creating a return order?,43000591470
+212,What are the modes of Refund I can offer to my customers?,43000658282
+213,Can I decide when to initiate a refund on a return order?,43000658283
+214,How can I auto refund a buyer?,43000658284
+215,How can I track my shipment status?,43000335577
+216,How can I track shipments for a particular date range?,43000480756
+217,Where can I track my shipment with a particular AWB?,43000480758
+218,How to track my international orders?,43000565809
+219,How do I track my RTO orders?,43000463604
+220,"What is RTO Initiated, Delivered and Acknowledged?",43000476628
+221,What are Buyer Communication Settings?,43000581584
+222,How to customize my email notifications?,43000581593
+223,How to customize my SMS notifications?,43000581598
+224,Can I put my company logo in email notifications?,43000581601
+225,How to add and search your customer's details in Shiprocket?,43000544769
+226,How do I get KYC verified?,43000477134
+227,What documents are required for KYC verification?,43000477135
+228,My KYC verification got failed. What now?,43000477136
+229,How much time does it take for kyc verification in Shiprocket?,43000604028
+230,Why there is a weight discrepancy pop up on my screen?,43000326499
+231,"If I do not agree with the charged weight, what are the next steps to follow?",43000337697
+232,What are the packaging tips to reduce weight errors in shipping?,43000477896
+233,How to calculate the volumetric weight of my shipment?,43000544658
+234,How long does it take to resolve my order weight dispute?,43000604038
+235,Why is my amount on-hold?,43000604041
+236,How do I export the Weight Discrepancy report?,43000480770
+237,What if my pickup is delayed?,43000430305
+238,What are the different stages of Pick up in ShipRocket Panel ?,43000336755
+239,"Do ShipRocket’s carriers have S.L.A.’s defined for late deliveries, pick ups, etc.?",43000337239
+240,Why do I get a pickup error?,43000460578
+241,How can I track my out for pickup shipments?,43000480755
+242,"How do I check  pick up performance , processing time vis-a-vis the other sellers in Shiprocket?",43000480760
+243,"Do you have carriers who will ship perfumes, deodorants, liquid items, milk products?",43000337714
+244,Why is a manifest required?,43000476637
+245,Can I print Manifests of Orders in Bulk?,43000476638
+246,"Can I reassign the courier company, once manifest is generated?",43000476640
+247,What are the different pick up statuses?,43000476647
+248,My pickup is delayed. How do I get priority support for my pickup request?,43000545830
+249,New Manifest Process: How to Print a Shipping Manifest?,43000554098
+250,Do I need to upload an Eway Bill for my shipment? How do I do it?,43000615533
+251,How to upload Eway Bill for an RTO shipment?,43000615536
+252,What happens if I don’t upload an Eway Bill for my RTO shipment?,43000615537
+253,Do I need to upload Eway Bill at the time of bulk pickup generation?,43000615538
+254,What is a pickup ID?,43000651286
+255,How do I find my pickup ID?,43000651288
+256,Can shipments be moved from one pickup ID to another?,43000651289
+257,Can I still use Manifest ID to escalate pickup delays?,43000651290
+258,What is the difference between a pickup ID and a Manifest ID?,43000651291
+259,What happens to a pickup ID if all shipments are canceled?,43000651294
+260,What are the various Pick up ID statuses?,43000651295
+261,In what circumstances can different pickup IDs be generated?,43000651296
+262,What will be the role of Manifest ID?,43000651459
+263,Will this have an impact on the pickup process in the Shiprocket mobile apps as well?,43000651557
+264,How do I schedule a shipment pickup for a future date?,43000669660
+265,Can I schedule my pickup on any date?,43000669661
+266,Can I change the date of my scheduled pick-up?,43000669663
+267,Shiprocket Mobile App: How can I recharge my Shiprocket wallet?,43000607377
+268,Where can I check my Recharge Logs?,43000607397
+269,What are the basic details required to start shipping with Shiprocket?,43000607399
+270,Why do I need to add my bank account details?,43000607400
+271,How to activate and deactivate courier partners?,43000607401
+272,Can I submit my KYC details via Shiprocket app?,43000607403
+273,Shiprocket App: I want to integrate my sales channels?,43000607405
+274,How to set the courier priority in Shiprocket App?,43000613110
+275,How to check shipping rates for my forward order?,43000613119
+276,How to add and edit customer details in Shiprocket?,43000613128
+277,How to create a return order in Shiprocket App?,43000613131
+278,I have an issue with my order. How do I contact the support team?,43000621574
+279,Can I integrate my sales channel using Shiprocket app?,43000621575
+280,How to manage my notifications?,43000621870
+281,Can I create a return order in Shiprocket app?,43000622256
+282,How to check shipping rates for my return order?,43000622286
+283,How to add orders for my existing customers?,43000623346
+284,How does the Shiprocket barcode scanner work?,43000633401
+285,Shiprocket App: How to ship my local orders?,43000594636
+286,Why should I choose local delivery?,43000567936
+287,Is my pincode serviceable for Shiprocket Local delivery?,43000568131
+288,Can I cancel my local order on Shiprocket?,43000567965
+289,Is the return functionality available for local deliveries?,43000567967
+290,Shiprocket local: Do you provide same day deliveries?,43000567970
+291,Do I need to use the map for non-hyperlocal orders as well?,43000594638
+292,How to select my delivery location on the map?,43000594639
+293,What should I do if a courier cancels my hyperlocal order?,43000621733
+294,What are the necessary steps to be fulfilled for hassle-free COD remittance?,43000607413
+295,Why did you apply additional charges for weight and RTO on my account?,43000607414
+296,Shiprocket App: When will I receive my COD payment?,43000607415
+297,Shiprocket App? What is Postpaid Remittance? How do I activate it?,43000607416
+298,How do I recharge my Shiprocket wallet?,43000640402
+299,Shiprocket App: How to activate Early COD?,43000621881
+300,Shiprocket App: I want to check how much COD is pending to be remitted?,43000622309
+301,Shiprocket App: How to escalate my order pickup?,43000607543
+302,Shiprocket App: How to download a POD for my order?,43000607550
+303,Shiprocket App: How to view RTO orders?,43000607552
+304,Shiprocket App: My order hasn't been delivered yet. How to escalate it?,43000607555
+305,Shiprocket App: Can I add my orders in bulk?,43000607557
+306,Shiprocket App: How to escalate my NDR reattempt request?,43000616678
+307,Shiprocket App: How to process an NDR shipment?,43000617306
+308,Shiprocket App: How do I initiate a POD escalation?,43000633354
+309,Shiprocket App: What are the various pickup statuses?,43000633389
+310,Shiprocket App: How to add an order?,43000607560
+311,"Shiprocket App: How do I generate an E-Way bill, and why is it required?",43000607564
+312,Shiprocket App: How to generate label and invoice for an order?,43000607566
+313,Shiprocket App: How to generate a manifest?,43000607567
+314,Shiprocket App: Can I add my brand logo and product details to the shipping label?,43000607568
+315,What type of orders we can add in Shiprocket mobile app?,43000616667
+316,Shiprocket App: How to create a return order?,43000616670
+317,Shiprocket App: Where can I see the freight invoice?,43000621736
+318,Shiprocket App: How to download a POD?,43000621737
+319,Shiprocket App: Can I add orders in bulk?,43000621746
+320,How to process orders in bulk?,43000621888
+321,How to ship an order?,43000621933
+322,Is it possible to reassign my shipment to a different courier partner once the manifest has been generated?,43000632921
+323,Shiprocket App: How do you make a duplicate/clone order?,43000633357
+324,Shiprocket App: How to cancel an order?,43000633395
+325,What Is Shiprocket Secure? How Do I Activate It for My Account?,43000640265
+326,How to add an order?,43000661611
+327,How to edit an order?,43000662576
+328,Where can I view my RTO orders?,43000662716
+329,Shiprocket: How to ship an order?,43000661612
+330,How do I update orders in bulk?,43000662577
+331,How to upload Eway Bill for my RTO order?,43000662717
+332,Shiprocket: How to download shipping invoices and labels?,43000661613
+333,How to verify my orders in Shiprocket?,43000662581
+334,Why do I need to upload package images?,43000662595
+335,How to download a manifest?,43000661615
+336,How to upload and change Eway Bill for forward orders?,43000662714
+337,Can I change the payment mode of my COD order?,43000662752
+338,Can I change the payment mode of my order if it’s in the out for delivery status?,43000662753
+339,How do I add order tag?,43000662758
+340,How to download my orders report?,43000662761
+341,How to raise a delivery dispute in Shiprocket?,152000000285
+342,What is a pickup ID?,43000662582
+343,How do I find my pickup ID?,43000662583
+344,Can shipments be moved from one pickup ID to another?,43000662584
+345,Can I still use Manifest ID to escalate pickup delays?,43000662585
+346,What is the difference between a pickup ID and a Manifest ID?,43000662586
+347,What happens to a pickup ID if all shipments are canceled?,43000662588
+348,What are the various Pick up ID statuses?,43000662589
+349,In what circumstances can different pickup IDs be generated?,43000662590
+350,What will be the role of Manifest ID?,43000662591
+351,Will this have an impact on the pickup process in the Shiprocket mobile apps as well?,43000662592
+352,Can I modify the order details after I've scheduled pickup?,43000662596
+353,How do I handle pickup delays in my Shiprocket account?,43000662725
+354,What are the steps from order creation to pick up?,152000000264
+355,What is a Pickup error and how to solve it?,152000000265
+356,What is a pickup exception?,152000000266
+357,Can I cancel a picked up shipment?,152000000267
+358,What do I do in case of a fake pickup attempt?,152000000268
+359,Can I update the details of an already picked shipment?,152000000269
+360,Can I schedule shipment for a future date?,152000000270
+361,How do I get KYC verified?,43000659830
+362,Shiprocket: What documents are required for KYC verification?,43000662578
+363,My KYC verification failed. What should I do now?,43000662579
+364,How do I integrate Amazon as a channel?,43000659842
+365,How Do I integrate Opencart with Shiprocket?,43000659881
+366,How Do I integrate Woocommerce with Shiprocket?,43000659882
+367,How Do I integrate Magento(version 1) with Shiprocket?,43000659883
+368,How do I integrate Shopify as a channel with Shiprocket ?,43000659886
+369,How do I integrate Unicommerce with Shiprocket?,43000659888
+370,How Do I integrate Magento(Version 2) with Shiprocket?,43000659890
+371,How to Integrate Prestashop with Shiprocket?,43000659893
+372,What Is a Pull Order Status Mapper?,43000659894
+373,What Is a Push Order Status Mapper?,43000659896
+374,What's a Map Payment Statuses Feature?,43000659897
+375,What is a custom channel and how do I use it?,43000659898
+376,How do I integrate my Zoho website with Shiprocket?,43000659908
+377,How do I integrate my Store Hippo account with Shiprocket?,43000659911
+378,How to integrate Facebook Messenger with Shiprocket?,43000659912
+379,Channel Integration: How to import the weight and dimensions of each product?,43000659918
+380,How do I integrate Instamojo with Shiprocket?,43000659924
+381,How do I integrate Ecwid as a channel with Shiprocket ?,43000659933
+382,How do I recharge my Shiprocket wallet?,43000660009
+383,How to calculate my shipping rate?,43000664182
+384,What do we mean by shipment forward charges and RTO charges?,43000664183
+385,Explaining shipping zones: How shipment zones affect order fulfillment and rates?,43000664184
+386,I want to send my shipment outside India. How do I check the international shipping rate in Shiprocket?,43000664185
+387,How to check the applied COD charges?,152000000168
+388,What are the necessary steps to be fulfilled for hassle free COD remittance?,43000664186
+389,I want to check how much COD is pending to be remitted?,43000664187
+390,I want to upgrade my Shiprocket plan. How do I do it?,43000664188
+391,What is Shiprocket Postpaid? How do I activate it?,43000664189
+392,How many times do I get freight invoices in a month?,43000664192
+393,What happens if I don't pay my invoice?,43000664194
+394,How can I pay my shipping invoice?,43000664195
+395,How do I contact the Shiprocket support team?,43000664196
+396,Why there is a weight discrepancy pop up on my screen?,43000664197
+397,"If I do not agree with the charged weight, what are the next steps to follow?",43000664199
+398,Explain the different types of weight terminology used in the platform?,43000664201
+399,What are the packaging tips to reduce weight errors in shipping?,43000664203
+400,How to calculate the volumetric weight of my shipment?,43000664204
+401,How long does it take to resolve my order weight dispute?,43000664205
+402,Why is my amount on-hold?,43000664206
+403,How do I export the Weight Discrepancy report?,43000664208
+404,Can I see all Shiprocket rates in one place?,152000000171
+405,How to compare different Shiprocket plans rates while using filters?,152000000172
+406,"What is Forward, Reverse and Document in the Rate Card?",152000000173
+407,What is Minimum Weight?,152000000175
+408,What is Shiprocket Postpaid? How do I activate it?,152000000176
+409,How to create Multi-users?,152000000249
+410,What are the available plans in Shiprocket and which one would be the most suitable for my shipping needs?,152000000250
+411,Can I upgrade and downgrade my plan at any time?,152000000251
+412,What is Courier Priority and How to set courier priority?,152000000252
+413,How to set courier priority?,152000000256
+414,How to set Courier Rules?,152000000257
+415,How to Activate or Deactivate Couriers?,152000000258
+416,How to block and unblock ODA and RTO pincodes?,152000000259
+417,What if no courier rule is applicable?,152000000260
+418,Where can I find the priority of the courier rule that is applied to shipments?,152000000261
+419,What is the process to get the shipping Bills?,152000000278
+420,What is the delivery TAT for different international couriers?,152000000279
+421,What is the TAT for international shipping bills?,152000000280
+422,How to do International KYC?,152000000281
+423,Why can't I ship more than 30 KGs from Shiprocket?,152000000282
+424,What all carriers does Shiprocket have for international shipping?,152000000283
+425,When will my International KYC be approved?,152000000284
+426,What is Whatsapp communication and how is it helpful?,152000000315
+427,How can I select or customize the flow of WhatsApp Communication?,152000000316
+428,How can I enable or disable Whatsapp Communication?,152000000317
+429,Can I use WhatsApp Communication and then pay later?,152000000318
+430,What are the benefits of Whatsapp Communication?,152000000319
+431,How can I take a demo of Whatsapp communication?,152000000320
+432,How much will WhatsApp Communication cost me?,152000000321
+433,Which shipment status updates does Shiprocket send?,152000000322
+434,Can I use my own messages to be sent to the buyer?,152000000323
+435,What is Delivery Boost?,152000000381
+436,What are the features and benefits of Delivery Boost?,152000000382
+437,How can I join Delivery Boost?,152000000383
+438,How I can try the Demo of Delivery Boost?,152000000384
+439,How will I be charged for using the Delivery Boost service?,152000000385
+440,How to check if the shipment delivered is a Delivery Boost shipment?,152000000386
+441,What is the extra revenue & how will I know when I saved RTO cost or generated revenue?,152000000387
+442,Can I switch back to NDR Buyer Flow?,152000000388
+443,What if I do not use Delivery Boost?,152000000389
+444,What will be the invoice cycle of Delivery Boost?,152000000391
+445,Will I be charged for the Delivery Boost trial period?,152000000392
+446,Will I be charged when the Delivery Boost trial period has ended?,152000000393
+447,How to check the number of days remaining in the trial period?,152000000394
+448,What is NDR?,43000664209
+449,How to Process an NDR?,43000664210
+450,What is the process time for NDR?,43000664212
+451,How to escalate my NDR reattempt request?,43000664214
+452,How many attempts will be made by the courier company to deliver my order?,43000664215
+453,How long does it take for an action to be implemented on my undelivered shipment?,43000664216
+454,How does the Contact Buyer functionality work?,43000664217
+455,"Do I get to Re-Escalate, if the delivery has not been attempted on the previous escalation raised?",152000000287
+456,What is the RTO score feature for you?,152000000308
+457,How can I enable or disable RTO score?,152000000309
+458,"What is High, Medium or low RTO predicted order?",152000000310
+459,What are the benefits of the RTO Score Feature?,152000000311
+460,What action can I take on High & Low  RTO?,152000000312
+461,How much will RTO Score cost me?,152000000313
+462,Can I use RTO Score feature now and Pay later?,152000000314
+463,What Is RTO Delay Escalation and How to Raise it?,152000000483
