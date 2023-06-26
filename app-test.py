@@ -183,7 +183,7 @@ def train_doc():
             que_id = get_question_id(results[0].page_content)
             print(que_id, answer)
         
-            rds.set(user_q, ans)
+            rds.set(user_q, answer)
             intent="openai_api"
     return jsonify({"response":get_answer(answer),"intent":intent, "que_id": answer})
 
