@@ -3,28 +3,15 @@ import openai
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores.redis import Redis
-from langchain.text_splitter import CharacterTextSplitter
 from langchain.llms import OpenAI
 from langchain.document_loaders.csv_loader import CSVLoader
-from langchain import ElasticVectorSearch
-from werkzeug.middleware.profiler import ProfilerMiddleware
 from langchain.text_splitter import NLTKTextSplitter
 import pandas as pd 
 import pickle
-import re
 import redis
 from fuzzywuzzy import fuzz        
-from elasticsearch import Elasticsearch
-# from langchain.vectorstores.elastic_vector_search import ElasticKnnSearch
-from langchain.embeddings import ElasticsearchEmbeddings
-from langchain.vectorstores import OpenSearchVectorSearch
-from opensearchpy import OpenSearch
-import sys
-import nltk
 import csv
-import os.path
-import pdb
+from langchain.vectorstores import FAISS
 
 rds = redis.Redis()
 load_dotenv()
@@ -33,8 +20,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 app=Flask(__name__)
 mappings = pickle.load(open('Answer_mappings.pkl','rb'))
 df=pd.DataFrame(mappings)
-
-
+#nltk.download('punkt')   # Run this only once in the server
 # Create a df to store the que_id and que_string mapping somewhere
 df_que_mapping = pd.read_csv('Questions.csv')
 # Set the 'question_id' column as the index
@@ -46,27 +32,11 @@ with open('embedding_model.pkl', 'rb') as f:
 @app.before_request
 def initialize_variables():
     #  Initialising the trained_model once
-    nltk.download('punkt')
     app.config['texts'] = get_texts()
 
-
-opensearch_url = "https://localhost:9900",
-http_auth = ("admin", "admin")
-
- #Function to perform similarity search for a batch of texts
 def similarity_search_batch(texts_batch, user_question):
-    docsearch = OpenSearchVectorSearch.from_documents(
-    texts_batch,
-    embedding,
-    opensearch_url=opensearch_url,
-    http_auth=http_auth,
-    use_ssl = False,
-    verify_certs = False,
-    ssl_assert_hostname = False,
-    ssl_show_warn = False,
-    )
-    return docsearch.similarity_search(user_question)
-
+    db = FAISS.from_documents(texts_batch, embedding)
+    return db.similarity_search(user_question)
 
 def get_content_after_string(string):
     search_string = "question_id:"
@@ -78,13 +48,6 @@ def get_content_after_string(string):
     content = string[index + len(search_string):].strip()
     return content
 
-def get_question_id(string):
-    match = re.search(r"question_id:\s+(\d+)", string)
-    if match:
-        question_id = match.group(1)
-        return question_id
-    else:
-        return None
     
 def get_answer(Q_id):
     answer = df.loc[df['question_id'] == int(Q_id), 'Answer_html'].values[0]
@@ -117,7 +80,7 @@ def check_if_question_valid(user_q):
 
     for statement in statements:
         similarity_score = fuzz.partial_ratio(user_q, statement)
-        if similarity_score >= 60:
+        if similarity_score >= 80:
             return False
 
     return True
@@ -126,26 +89,16 @@ def find_similar_question(question):
     # Retrieve all keys from the cache
     keys = rds.keys('*')
     # Iterate through the keys and find the most similar question
-    highest_similarity = 90
+    highest_similarity = 70
     similar_question = None
     for key in keys:
-        score=fuzz.partial_ratio(question,key.decode())        
+        score=fuzz.ratio(question,key.decode())        
         if score > highest_similarity:
-            #highest_similarity = similarity
+            highest_similarity = score
             similar_question = key.decode()
-            break
-            
-            
+            print(highest_similarity)
     return similar_question
 
-
-def optimized_find_similar_question(question):
-    # Retrieve all keys from the cache
-    keys = rds.keys('*')
-    # Sort the keys by similarity
-    keys.sort(key=lambda key: fuzz.ratio(question, key.decode()))
-    # Return the most similar question
-    return keys[0].decode()
 
 @app.route('/',methods=['POST'])
 def train_doc():
@@ -154,8 +107,6 @@ def train_doc():
     is_valid_que = check_if_question_valid(user_q)
     if(not is_valid_que):
         return jsonify({"response": "I'm sorry I don't understand your question. Please rephrase","intent": "not a question"})
-    
-    qq="Act as a FAQ answerer for a e-commerce company and please answer the question provided by the user and if there is no answer found to you as per your training please return 'NULL' and the user query is {} , please return 'NULL' if the question is not relevant to the document you have been trained".format(user_q)    
     ans = rds.get(user_q)
     if ans is not None:
         # If the question is in the cache, return the answer
@@ -168,21 +119,16 @@ def train_doc():
         # similar_question =optimized_find_similar_question(user_q)
         if similar_question is not None:
             # If a similar question is found in the cache, retrieve the corresponding answer
-            # answer = rds.get(similar_question).decode() 
-            ans = rds.get(user_q).decode()
-            que_id = ans
+            answer = rds.get(similar_question)
+            answer=answer.decode()
+            # ans = rds.get(user_q).decode()
+            # que_id = ans
             intent="redis_similar"                                    
-            print("redis_answer")
-            print(answer)
         # Generate the answer
         else:
             texts = app.config['texts']
             results=similarity_search_batch(texts, user_q)   
-
             answer=get_content_after_string((results[0].page_content))
-            que_id = get_question_id(results[0].page_content)
-            print(que_id, answer)
-        
             rds.set(user_q, answer)
             intent="openai_api"
     return jsonify({"response":get_answer(answer),"intent":intent, "que_id": answer})
@@ -194,7 +140,6 @@ in a csv which later will be used to retrain the model for enhancing accuracy ov
 '''
 @app.route('/feedback', methods=['POST'])
 def feedback():
-    # pdb.set_trace() 
     query=request.get_json()
     satisfied = request.args.get('satisfied')
     que_id = int(query['que_id'])

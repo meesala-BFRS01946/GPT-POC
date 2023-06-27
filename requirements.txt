@@ -2,7 +2,7 @@ openai
 tiktoken
 flask
 langchain
-elasticsearch
 fuzzywuzzy
 pandas
 redis
+faiss-cpu
